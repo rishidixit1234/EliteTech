@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Online Learning Platform</h1>
+        <nav>
+            <a href="#video-section">Lessons</a>
+            <a href="#quiz-section">Quiz</a>
+            <a href="#progress-section">Progress</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="video-section">
+            <h1>Video Lesson</h1>
+            <video id="lesson-video" controls>
+        <source src="assets/sample.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        </section>
+
+        <section id="quiz-section">
+            <h1>Quiz</h1>
+            <div class="quiz-container">
+                <p id="question">What does HTML stand for?</p>
+                <ul>
+                    <li><button onclick="checkAnswer(this)">Hyperlinks and Text Markup Language</button></li>
+                    <li><button onclick="checkAnswer(this)">Home Tool Markup Language</button></li>
+                    <li><button onclick="checkAnswer(this)">HyperText Markup Language</button></li>
+                </ul>
+                <p id="quiz-feedback"></p>
+            </div>
+        </section>
+
+        <section id="progress-section">
+            <h1>Your Progress</h1>
+            <p>Lessons watched: <span id="video-progress">0</span></p>
+            <p>Quiz completed: <span id="quiz-progress">No</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Online Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
