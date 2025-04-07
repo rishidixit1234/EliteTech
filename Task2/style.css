@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2b0101;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header {
+    background: #360202;
+    ;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: orange;
+    border-radius: 3px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.personal-info {
+    flex: 1;
+    animation: fadeInLeft 1s;
+}
+
+.personal-info h1 {
+    margin: 0;
+}
+
+.personal-info p {
+    margin: 10px 0;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: #360202;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: orangered;
+}
+
+.buttons button a {
+    color: white;
+    text-decoration: none;
+}
+
+.photo {
+    flex: 1;
+    text-align: center;
+    animation: fadeInRight 1s;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#projects h1 {
+    color: #360202;
+    font-size: 30px;
+}
+
+#skills h1 {
+    color: #360202;
+}
+
+.skill-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skill-section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px;
+}
+
+.skill-card h2 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+
+.skill-card ul li {
+    font-size: 20px;
+    color: black;
+    list-style-type: none;
+}
+
+#blogs h1 {
+    color: #360202;
+}
+
+.achievement-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.achievement-section h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: white;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px;
+}
+
+.achievement-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#achievements h1 {
+    color: #360202;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.contact-section h1 {
+    color: #360202;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea,
+form button {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+form button {
+    background: #2b0101;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: orangered;
+}
+
+.footer-content {
+    padding: 20px;
+    background: #2b0101;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    align-items: center;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+    .personal-info,
+    .photo {
+        flex: none;
+    }
+}

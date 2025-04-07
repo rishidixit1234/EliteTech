@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Mr. Mohit Dixit</div>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-me">
+        <div class="personal-info">
+            <h1><b>Hii all I'm Mohit Dixit</b></h1>
+            <p>A passionate Full Stack Software Developer having an experience of building Web Applications with Java Script / PHP / Nodejs / and some other libraries and framework</p>
+            <div class="buttons">
+                <button onclick="downloadResume()">Download Resume</button>
+                <button><a href="#contact">Contact Me</a></button>
+            </div>
+
+        </div>
+        <div class="photo">
+            <img src="img3.jpg" alt="img">
+        </div>
+
+    </section>
+
+    <section id="skills" class="skill-section">
+        <h1><b>Skills</b></h1>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <h2>Computer Knowledge</h2>
+                <ul>
+                    <li>M.S.Office</li>
+                    <li>CCC</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h2>Web Development</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java Script</li>
+                    <li>PHP</li>
+
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Basic Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+
+                <h2>Database </h2>
+                <ul>
+                    <li>DBMS</li>
+                    <li>RDBMS</li>
+                    <li>Mysql</li>
+                    <li>MangoDB(Learning)</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+
+                <h2>Developer Tools</h2>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Xampp</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="projects">
+        <h1><b>Projects</b></h1>
+        <h4>PROJECT : 1</h4>
+        <p>
+            <b>Title :</b> Online voting system using HTML, CSS, PHP <br> <b>Description : </b>Online Voting is a web-based voting system that will help us manage our elections easily and securely. The main intension is to promote and protect the civil
+            rights of participants in elections...
+            <br><b> Duration :</b> June 2023
+            <hr>
+        </p>
+        <h4>PROJECT : 2</h4>
+        <p>
+            <b> Title : </b>College management using HTML, CSS, PHP<br><b>  Description :</b> Using this project we can manage all college management work like admission, fees submission, time table management and result declaration. Using this college
+            management system we can view or update data and information about students and staff easily....<br><b>  Duration :</b> Oct 2023
+            <hr>
+        </p>
+        <p>
+            <h4>PROJECT : 3</h4>
+            <b> Title : </b>Just Click ! (A Web Applications) using HTML,CSS,PHP <br><b>  Description :</b>This Website connect one person to another , as Doctor to patient , Teacher to Student etc. Here , one can make his/her appointment easily with
+            the respective supreme of the field, according to their need of their field. This website can be a solution to one's daily life problems... <br><b>  Duration :</b> May 2024
+            <hr>
+        </p>
+        <p>
+            <h4>PROJECT : 4</h4>
+            <b> Title : </b>Personal Portfolio using HTML,CSS,Java Script <br><b>  Description :</b>A passionate Full Stack Software Developer having an experience of building Web Applications with Java Script / PHP / Nodejs / and some other libraries
+            and framework....
+            <br><b>  Duration :</b> June 2024
+            <hr>
+        </p>
+    </section><br><br>
+
+
+
+    <section id="achievements" class="achievement-section">
+        <h1><b>Achievements</b></h1>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <img src="img6.jpg" alt="">
+            </div>
+            <div class="achievement-card">
+                <img src="codesoft.jpg" alt="">
+            </div>
+
+            <div class="achievement-card">
+                <img src="c++.jpg" alt="">
+                <img src="sql.jpg" alt="">
+            </div>
+            <div class="achievement-card">
+                <img src="sql.jpg" alt="">
+            </div>
+            <div class="achievement-card">
+                <img src="chatgpt.jpg" alt="">
+            </div>
+
+            <div class="achievement-card">
+                <img src="js.jpg" alt="">
+            </div>
+            <div class="achievement-card">
+                <img src="java.jpg" alt="">
+            </div>
+            <div class="achievement-card">
+                <img src="py.jpg" alt="">
+            </div>
+            <div class="achievement-card">
+                <img src="html.jpg" alt="">
+            </div>
+        </div>
+
+    </section><br><br>
+    <section id="blogs">
+        <h1>Blogs</h1>
+    </section><br><br>
+    <section id="contact" class="contact-section">
+        <h1><b>Contact Me</b></h1>
+        <form action="form.php" class="form-card" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Mr. Mohit Dixit 2025 Personal Portfolio. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script>
+        function downloadResume() {
+            window.location.href = 'Mohit-CV.pdf';
+        }
+    </script>
+</body>
+
+</html>
