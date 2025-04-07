@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Easy Shop</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#our-features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h1>Welcome to Easy Shop !</h1>
+        <p>Your one-stop shop for everything!</p>
+        <button onclick="scrollToSection('products')">Shop Now</button>
+    </section>
+
+
+    <section id="products" class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="t-shirts.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Rs:300.00</p>
+            </div>
+
+            <div class="product-card">
+                <img src="leather shoe.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Rs:1200.00</p>
+            </div>
+            <div class="product-card">
+                <img src="high-heels.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Rs:1000.00</p>
+            </div>
+            <div class="product-card">
+                <img src="sport shoe.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Rs:1500.00</p>
+            </div>
+            <div class="product-card">
+                <img src="jeans.jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>Rs:1200.00</p>
+            </div>
+            <div class="product-card">
+                <img src="jersy.jpg" alt="Product 6">
+                <h3>Product 6</h3>
+                <p>Rs:1200.00</p>
+            </div>
+            <div class="product-card">
+                <img src="watch.avif" alt="Product 7">
+                <h3>Product 7</h3>
+                <p>Rs:1000.00</p>
+            </div>
+            <div class="product-card">
+                <img src="cap.jpeg" alt="Product 8">
+                <h3>Product 8</h3>
+                <p>Rs:100.00</p>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+    <section id="our-features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Wide Variety</h3>
+                    <p>Choose from a wide range of products.</p>
+                </div>
+                <div class="feature">
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping on orders over Rs:5000.</p>
+                </div>
+                <div class="feature">
+                    <h3>24/7 Support</h3>
+                    <p>We are here to help you anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to Easy Shop ! we believe in the power of online shopping to bring joy, convenience, and variety to our customers' lives. Our mission is to provide a seamless shopping experience with a vast array of high-quality products at competitive
+            prices.... <br>Easy shop Landing page is founded in 2024 with a vision to revolutionize the e-commerce landscape. Starting from a small office, our passionate team has grown, but our core values remain the same: customer satisfaction, integrity,
+            and innovation. Today, we proudly serve thousands of satisfied customers and continue to expand our reach.
+        </p>
+    </section><br><br>
+    <section id="contact" class="contact-section">
+        <h1><b>Contact Me</b></h1>
+        <form action="form.php" class="form-card" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section><br><br>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Mr. Mohit Dixit 2025 Easy Shop. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior:   'smooth' 
+            });
+        }
+    </script>
+
+</body>
+
+</html>
